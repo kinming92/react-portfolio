@@ -6,16 +6,12 @@ class About extends Component{
             <div className="about-box container border">
                 <div className="row">
                     <div className="col-lg-4">
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <img src="/react-portfolio/image/apartments-architecture-balcony-black-and-white.jpg" alt="..." />
+                       <img src="/react-portfolio/image/walking-pose.jpg" alt="..." />
+                        {/* <div className="row">
+                            <div className="col-md">
+                                <img src="/react-portfolio/image/walking-pose.jpg" alt="..." />
                             </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <img src="/react-portfolio/image/a-pexels.jpg" alt="..." />
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-12 col-lg">
                         <div>
