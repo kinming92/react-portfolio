@@ -21,13 +21,13 @@
 .sidebar {
     height: auto;
     min-height: 100vh;
-    flex: 1 6%;
+    flex: 1 5%;
     border-right: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
-}
+}   
 /* sidebar */
 .lang {
    padding: 5px;
@@ -85,7 +85,8 @@
 
 /* navigation bar */
 .main-content{
-    flex: 1 90vw
+    /* min-width: auto; */
+    flex: 1 90%;
 }
 .navbar {
     max-height: 3em;
@@ -191,4 +192,11 @@
 
 .project-container {
     
+}
+
+@media screen and (min-width: 400px){
+    .home-container h3{
+        max-height: 100vh;
+        top: 2rem;
+    }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Switch, Route} from 'react-router-dom'
+import MediaQuery from 'react-responsive'
 
 import Sidebar from './En/Sidebar'
 
@@ -27,7 +28,7 @@ class App extends Component {
         title: "Movie Collection Website Backend Rest API",
         description: `A node.js RESTful app to serve as endpoint for the simple movie collection website. 
                       Technologies and tools used include Node.js, Express.js, MongoDB, Mongoose, JavaScript ECMAScript 6, JsonWebToken`,
-        doc: "https://github.com/kinming92/burger-app-tutorial",
+        doc: "https://github.com/kinming92/movie-website-rest-api",
         demo: ""
       },
       {
@@ -69,16 +70,7 @@ class App extends Component {
         description: "Our goal of this project was to create a prototype that uses RFID technology to unlock the door. Face tracking was experimented using matlab libraries. I worked on the door frame, latch, and hinge using the AutoCAD SolidWork.",
         doc: "https://kinming92.github.io/assets/doubleSecurity/FinalReport.pdf",
         demo: ""
-      }],
-      experience : [
-        {
-          Title: "",
-          Company: "",
-          StartDate: "",
-          EndDate: "",
-          Duties: ""
-        }
-      ]
+      }]
     }
     this.handleLanguageSwitch = this.handleLanguageSwitch.bind(this)
    
@@ -100,7 +92,10 @@ class App extends Component {
     return (
       <div className="app">
           <div className="flex-grid" >
-            <Sidebar onLanguageClicked={this.handleLanguageSwitch}/>
+
+            <MediaQuery minDeviceWidth={350}>
+              <Sidebar onLanguageClicked={this.handleLanguageSwitch}/>
+            </MediaQuery>
             
             <div className="main-content">
               { lang === 'en' ? <NavbarEn /> : <NavbarCh />}
