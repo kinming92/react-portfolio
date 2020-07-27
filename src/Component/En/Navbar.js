@@ -7,12 +7,12 @@ class Navbar extends Component {
             <div className="navbar">
                 <ul className="navbar__nav">
                     <li className="nav__item">
-                        <Link className="nav-link active" to={"/react-portfolio"}>Home</Link>
+                        <Link className="nav-link" to={"/react-portfolio"}>Home</Link>
                     </li>
                     <li className="nav__item">
                         <Link className="nav-link" to={"/react-portfolio/about"}>About</Link>
                     </li>
-                    <li className="nav__item">
+                    <li className="nav__item">      
                         <Link className="nav-link" to={"/react-portfolio/projects"}>Projects</Link>
                     </li>
                     <li className="nav__item">
