@@ -24,14 +24,14 @@ class Card extends Component{
     onDemoClicked(){
         const url = this.props.project.demo
         window.location.href = url
-        this.props.history.replace("/react-portfolio")
+        this.props.history.replace("/react-portfolio/projects")
 
     }
 
     onDocClicked(){
         const url = this.props.project.doc
         window.location.href = url;
-        this.props.history.replace("/react-portfolio")
+        this.props.history.replace("/react-portfolio/projects")
     }
     
     onShowClicked(){

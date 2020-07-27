@@ -24,14 +24,14 @@ class Card extends Component{
     onDemoClicked(){
         const url = this.props.project.demo
         window.location.href = url
-        this.props.history.replace("/react-portfolio")
+        this.props.history.replace("/react-portfolio/projects")
 
     }
 
     onDocClicked(){
         const url = this.props.project.doc
         window.location.href = url;
-        this.props.history.replace("/react-portfolio")
+        this.props.history.replace("/react-portfolio/projects")
     }
     
     onShowClicked(){
@@ -54,7 +54,7 @@ class Card extends Component{
         
         return(
             <div className="card" >
-                <img src={process.env.PUBLIC_URL + image} className="card-img-top" alt="..." style={{ maxHeight: "100%", maxWidth: "100%"}}/>
+                <img src={process.env.PUBLIC_URL + image} className="card-img-top" alt="..." style={{ height: "200px", maxWidth: "100%", objectFit: "cover"}}/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <button className={"btn btn-outline-secondary m-1 p-1" + disabledDoc } onClick={() => this.onDocClicked()} >文件资料</button>
