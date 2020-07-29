@@ -3,10 +3,10 @@ import React, { Component } from "react";
 class About extends Component{
     render(){
         return (
-            <div className="about-box container border">
+            <div className="about-box container">
                 <div className="row">
                     <div className="col-lg-4">
-                       <img src="/react-portfolio/image/walking-pose.jpg" alt="..." />
+                       <img src="/react-portfolio/image/mount-rushmore.jpg" alt="profile pic" />
                         {/* <div className="row">
                             <div className="col-md">
                                 <img src="/react-portfolio/image/walking-pose.jpg" alt="..." />

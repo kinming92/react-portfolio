@@ -23,15 +23,13 @@ class Card extends Component{
 
     onDemoClicked(){
         const url = this.props.project.demo
-        window.location.href = url
-        this.props.history.replace("/react-portfolio/projects")
+        window.open(url)
 
     }
 
     onDocClicked(){
         const url = this.props.project.doc
-        window.location.href = url;
-        this.props.history.replace("/react-portfolio/projects")
+        window.open(url)
     }
     
     onShowClicked(){
@@ -59,7 +57,7 @@ class Card extends Component{
                     <h5 className="card-title">{title}</h5>
                     <button className={"btn btn-outline-secondary m-1 p-1" + disabledDoc } onClick={() => this.onDocClicked()} >Doc</button>
                     <button className={"btn btn-outline-secondary m-1 p-1" + disabledDemo } onClick={() => this.onDemoClicked()}>Demo</button>
-                    { showDetails ? <button className="btn btn-outline-secondary m-1 p-1" onClick={() =>this.onHideClicked()}>Hide</button> : <button className="btn btn-outline-secondary m-1 p-1" onClick={() =>this.onShowClicked()}>Show</button>}
+                    { showDetails ? <button className="btn btn-outline-secondary m-1 p-1" onClick={() =>this.onHideClicked()}>Hide</button> : <button className="btn btn-outline-secondary m-1 p-1" onClick={() =>this.onShowClicked()}>More</button>}
                     { showDetails ? <p className="card-text">{description}</p> : null }
                 </div>
             </div>

@@ -24,9 +24,9 @@ class Contact extends Component{
             <div className="contact-box">
                 <div className="card" >
                     <div className="card-body">
-                        <h3 className="card-title">Contact Us</h3>
-                        <p className="card-text">Feel free to leave us a message</p>
-                        <form onSubmit={this.handleSubmit}>
+                        <h3 className="card-title">Contact Me</h3>
+                        <p className="card-text">Feel free to leave me a message</p>
+                        <form onSubmit={this.handleSubmit}> 
                             {/* <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Email</label>
                                 <input type="email" className="form-control" id="email" placeholder="name@example.com" name="email" />
