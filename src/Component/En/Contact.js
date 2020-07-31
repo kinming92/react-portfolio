@@ -40,7 +40,7 @@ class Contact extends Component{
                                 <textarea className="form-control" id="message" rows="3" name="message"></textarea>
                             </div>
                             <div className="col-auto">
-                                <button type="submit" className="btn btn-outline-secondary mb-3">Submit</button>
+                                <button type="submit" className="btn btn-outline-dark mb-3">Submit</button>
                             </div>
                         </form>
                     </div>

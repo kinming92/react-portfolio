@@ -10,7 +10,7 @@
     min-height: 100vh;
     min-width: 100vw;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: white;
+    color: #32050e;
     background-color: #DFAA99;
 }
 
@@ -22,7 +22,7 @@
     height: auto;
     min-height: 100vh;
     flex: 1 5%;
-    border-right: 1px solid white;
+    border-right: 1px solid #32050e;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,7 +64,7 @@
     margin: 5px;
 }
 .fab {
-    color: white;
+    color: #32050e;
 }
 
 .lang li:hover,
@@ -89,7 +89,7 @@
 }
 .navbar {
     max-height: 3em;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #32050e;
 }
 
 .navbar__nav{
@@ -103,13 +103,13 @@
 
 .nav-link{
     /* text-decoration: none; */
-    color: white;
+    color: #32050e;
 }
     
 .nav-link:hover, 
 .nav-link:active {
-    color: white;
-    border-bottom: 2px solid white;
+    color: #32050e;
+    border-bottom: 2px solid #32050e;
 }
 
 
@@ -138,9 +138,7 @@
 .contact-box{
     max-width: 70%;
     max-height: fit-content;
-    margin: 2rem;
-    
-    
+    margin: 2rem; 
 }
 
 .card {
@@ -178,21 +176,6 @@
     letter-spacing: 2px;
 }
 
-/* works */
-.works-container{   
-
-    border: 1px solid white;
-    margin: 2rem;
-    padding: 1rem;
-    max-width: 70%;
-    height: auto;
-}
-
-.works-container img{
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-}
 
 @media screen and (min-width: 400px){
     .home-container h3{

@@ -6,7 +6,7 @@ class Projects extends Component {
         return (
             <div className="project-container container-fluid">
                 <div className="row">
-                    {this.props.projects.map((project, index) => (<div key={index} className="col-xs col-sm col-sm-3 m-2"> <Card key={index} project={project} /> </div>))}
+                    {this.props.projects.map((project, index) => (<div key={index} className="col-xs-3 col-md-3 m-2"> <Card key={index} project={project} /> </div>))}
                 </div> 
             </div>
         )
