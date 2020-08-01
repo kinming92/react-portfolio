@@ -57,9 +57,9 @@ class Card extends Component{
                 <img src={process.env.PUBLIC_URL + image} className="card-img-top" alt="..." style={{ height: "200px", maxWidth: "100%", objectFit: "cover"}}/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
-                    <button className={"btn btn-outline-secondary m-1 p-1" + disabledDoc } onClick={() => this.onDocClicked()} >文件资料</button>
-                    <button className={"btn btn-outline-secondary m-1 p-1" + disabledDemo } onClick={() => this.onDemoClicked()}>展示</button>
-                    { showDetails ? <button className="btn btn-outline-secondary m-1 p-1" onClick={() =>this.onHideClicked()}>隐藏</button> : <button className="btn btn-outline-secondary m-1 p-1" onClick={() =>this.onShowClicked()}>显示内容</button>}
+                    <button className={"btn btn-outline-dark m-1 p-1" + disabledDoc } onClick={() => this.onDocClicked()} >文件资料</button>
+                    <button className={"btn btn-outline-dark m-1 p-1" + disabledDemo } onClick={() => this.onDemoClicked()}>展示</button>
+                    { showDetails ? <button className="btn btn-outline-dark m-1 p-1" onClick={() =>this.onHideClicked()}>隐藏</button> : <button className="btn btn-outline-dark m-1 p-1" onClick={() =>this.onShowClicked()}>显示内容</button>}
                     { showDetails ? <p className="card-text">{description}</p> : null }
                 </div>
             </div>
