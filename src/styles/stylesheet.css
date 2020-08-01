@@ -176,6 +176,14 @@
     letter-spacing: 2px;
 }
 
+.not-found {
+    padding-top: 5em;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
 
 @media screen and (min-width: 400px){
     .home-container h3{

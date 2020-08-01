@@ -4,17 +4,20 @@ import MediaQuery from 'react-responsive'
 
 import Sidebar from './En/Sidebar'
 
+import PageNotFoundEn from './En/PageNotFound'
 import NavbarEn from './En/Navbar'
 import HomeEn from './En/Home'
 import AboutEn from './En/About'
 import ContactEn from './En/Contact'
 import ProjectsEn from './En/Projects'
 
+import PageNotFoundCh from './Ch/PageNotFound'
 import NavbarCh from './Ch/Navbar'
 import HomeCh from './Ch/Home'
 import AboutCh from './Ch/About'
 import ContactCh from './Ch/Contact'
 import ProjectsCh from './Ch/Projects'
+import PageNotFound from './En/PageNotFound'
 
 
 class App extends Component {
@@ -101,24 +104,26 @@ class App extends Component {
               { lang === 'en' ? <NavbarEn /> : <NavbarCh />}
               
               <Switch>
-                <Route exact path='/react-portfolio' component={ lang === 'en' ? HomeEn : HomeCh } />
-                <Route path='/react-portfolio/contact' component={ lang === 'en' ? ContactEn : ContactCh } />
-                <Route path='/react-portfolio/about' component={ lang === 'en' ? AboutEn : AboutCh } />
-                <Route path='/react-portfolio/projects' render={() => project}/>
-                
-                {/* use button / iframe */}
-                <Route path='/github' component={({history}) => { 
-                    history.replace("/react-portfolio");
-                    window.location.href = 'https://www.github.com/kinming92';
-                    return null;
-                }}/>
-                <Route path='/linkedin' component={({history}) => { 
-                    history.replace("/react-portfolio"); 
-                    window.location.href = 'https://www.linkedin.com/in/kinmingloh/';
-                    return null;
-                }}/>
-                
+              <Route exact path='/react-portfolio' component={ lang === 'en' ? HomeEn : HomeCh } />
+              <Route exact path='/react-portfolio/contact' component={ lang === 'en' ? ContactEn : ContactCh } />
+              <Route exact path='/react-portfolio/about' component={ lang === 'en' ? AboutEn : AboutCh } />
+              <Route exact path='/react-portfolio/projects' render={() => project}/>
+              
+              {/* use button / iframe */}
+              <Route path='/github' component={({history}) => { 
+                  history.replace("/react-portfolio");
+                  window.location.href = 'https://www.github.com/kinming92';
+                  return null;
+              }}/>
+              <Route path='/linkedin' component={({history}) => { 
+                  history.replace("/react-portfolio"); 
+                  window.location.href = 'https://www.linkedin.com/in/kinmingloh/';
+                  return null;
+              }}/>
+              <Route component={ lang === 'en' ? PageNotFoundEn : PageNotFoundCh } />
               </Switch>
+                
+              
             </div>
           </div>
           
