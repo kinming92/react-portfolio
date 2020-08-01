@@ -17,7 +17,6 @@ import HomeCh from './Ch/Home'
 import AboutCh from './Ch/About'
 import ContactCh from './Ch/Contact'
 import ProjectsCh from './Ch/Projects'
-import PageNotFound from './En/PageNotFound'
 
 
 class App extends Component {
@@ -105,9 +104,9 @@ class App extends Component {
               
               <Switch>
               <Route exact path='/react-portfolio' component={ lang === 'en' ? HomeEn : HomeCh } />
-              <Route exact path='/react-portfolio/contact' component={ lang === 'en' ? ContactEn : ContactCh } />
-              <Route exact path='/react-portfolio/about' component={ lang === 'en' ? AboutEn : AboutCh } />
-              <Route exact path='/react-portfolio/projects' render={() => project}/>
+              <Route path='/react-portfolio/contact' component={ lang === 'en' ? ContactEn : ContactCh } />
+              <Route path='/react-portfolio/about' component={ lang === 'en' ? AboutEn : AboutCh } />
+              <Route path={process.env.PUBLIC_URL + '/projects'} render={() => project}/>
               
               {/* use button / iframe */}
               <Route path='/github' component={({history}) => { 
